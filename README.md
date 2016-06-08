@@ -10,8 +10,8 @@ Usage:
   var server = 'ws://xyz.com/';
   var ws = new WebSocketWrapper(server);
   ws.connect().then(function(response) {
-   var json = {"id":1,"data:"text"} ;
-   ws.send(json, function(response) {
+   var payload = {"id":1,"data:"text"} ;
+   ws.send(payload, function(response) {
     // do stuff
    });
   });
